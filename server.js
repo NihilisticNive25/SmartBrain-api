@@ -10,11 +10,11 @@ const profile =  require('./Controllers/Profile');
 const image =  require('./Controllers/Image');
 
 const db = knex({
-	  client: 'mysql',
+	  client: 'pg',
 	  connection: {
 	    host : '127.0.0.1',
-	    user : 'Nivedha',
-	    password : 'yogesh2527#',
+	    user : 'postgres',
+	    password : 'yogesh',
 	    database : 'smartbrain'
 	  }
 })
