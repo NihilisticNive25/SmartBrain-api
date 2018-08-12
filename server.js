@@ -23,11 +23,11 @@ app.use(cors());
 app.set('port', process.env.PORT || 3001);
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json());
-app.get('/', (req,res)=>{
-	res.send(db.users)
-})
+// app.get('/', (req,res)=>{
+// 	res.send(db.users)
+// })
 
-app.get('/', (req,res)=> res.send('its working!'))
+app.get('/', (req,res)=>  res.json('it is working'))
 
 app.post('/signin', (req,res)=> signin.handleSignIn(req, res, db, bcrypt))
 
