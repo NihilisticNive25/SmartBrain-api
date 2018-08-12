@@ -27,7 +27,7 @@ app.get('/', (req,res)=>{
 	res.send(db.users)
 })
 
-app.post('/', (req,res)=> res.send('its working!'))
+app.get('/', (req,res)=> res.send('its working!'))
 
 app.post('/signin', (req,res)=> signin.handleSignIn(req, res, db, bcrypt))
 
